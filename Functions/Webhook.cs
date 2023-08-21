@@ -58,11 +58,11 @@ namespace Functions
                 return null;
             }
 
-            オウム返しする
-            この一行をコメントアウトする
-            await Reply(firstEvent.ReplyToken, firstEvent.Message.Text);
+            // オウム返しする
+            // この一行をコメントアウトする
+            // await Reply(firstEvent.ReplyToken, firstEvent.Message.Text);
 
-            以下のコメントアウトをはずす
+            // 以下のコメントアウトをはずす
             var prompt = firstEvent.Message.Text;
             var client = new OpenAIClient(
                 new Uri(Environment.GetEnvironmentVariable("AZURE_OPENAI_API_URL")),
